@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Atelier Lumière – Parrucchieri a Carpi</title>
+<meta name="description" content="Atelier Lumière: taglio, colore, balayage e trattamenti a Carpi. Prenota online o su WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a2226;--muted:#77686f;--bg:#fbf7f5;--blush:#f2e4e0;--rose:#b4677a;--rose-d:#94505f;--line:#eadcd7;
+--serif:Fraunces,Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;text-wrap:balance}
+h2{font-size:clamp(2.1rem,4.4vw,3.3rem);margin:.5rem 0 1rem}
+h2 i{color:var(--rose)}
+.kicker{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);font-weight:700}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;font-size:.93rem;transition:.25s}
+.btn-rose{background:var(--rose);color:#fff}.btn-rose:hover{background:var(--rose-d)}
+.btn-ghost{border:1.5px solid var(--ink)}.btn-ghost:hover{background:var(--ink);color:#fff}
+header{position:sticky;top:0;z-index:20;background:rgba(251,247,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font-family:var(--serif);font-size:1.5rem;letter-spacing:.02em}
+.logo span{color:var(--rose)}
+nav{display:flex;gap:28px;align-items:center;font-size:.93rem;font-weight:500}
+nav a:hover{color:var(--rose)}
+.burger{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;padding:70px 0 90px}
+.hero h1{font-size:clamp(2.8rem,6.6vw,5.4rem);margin:.8rem 0 1.4rem}
+.hero h1 i{color:var(--rose)}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:44ch;margin-bottom:2rem}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;align-items:center;gap:14px;margin-top:2.4rem;font-size:.9rem;color:var(--muted)}
+.avatars{display:flex}.avatars i{width:36px;height:36px;border-radius:50%;border:2px solid var(--bg);margin-left:-10px;background:linear-gradient(135deg,#e6b8c2,#b4677a)}.avatars i:first-child{margin-left:0}
+.avatars i:nth-child(2){background:linear-gradient(135deg,#d9c2a5,#a27c56)}.avatars i:nth-child(3){background:linear-gradient(135deg,#c7b9d6,#7d6699)}
+.trust b{color:var(--ink)}
+.hero-art{position:relative}
+.hero-art img{border-radius:220px 220px 16px 16px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.badge{position:absolute;left:-30px;bottom:50px;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:0 18px 40px rgba(80,40,50,.15);display:flex;gap:12px;align-items:center}
+.badge b{font-family:var(--serif);font-size:1.8rem;color:var(--rose)}
+.badge small{display:block;color:var(--muted);font-size:.8rem}
+/* services */
+section{padding:100px 0}
+.services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sv-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.sv-head p{color:var(--muted);max-width:40ch}
+.price-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.pcol{background:var(--bg);border-radius:18px;padding:30px}
+.pcol h3{font-size:1.6rem;margin-bottom:16px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.row:last-child{border:0}
+.row span:last-child{font-weight:700;white-space:nowrap}
+.row small{display:block;color:var(--muted);font-size:.8rem}
+/* team */
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.member img{border-radius:16px;aspect-ratio:3/4;object-fit:cover;width:100%;margin-bottom:14px}
+.member h3{font-size:1.45rem}
+.member p{color:var(--muted);font-size:.92rem}
+/* before after strip */
+.strip{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.strip img{border-radius:16px;aspect-ratio:16/10;object-fit:cover;width:100%}
+/* reviews */
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.rv blockquote{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}
+.rv blockquote p{font-family:var(--serif);font-size:1.2rem;line-height:1.4;margin:10px 0 16px}
+.rv cite{font-style:normal;color:var(--muted);font-size:.88rem}
+.rv .s{color:#d49a3a;letter-spacing:2px}
+/* booking */
+.booking{background:var(--blush)}
+.bk{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+.hours{background:#fff;border-radius:18px;padding:26px;margin-top:26px}
+.hours .row span:first-child{color:var(--muted)}
+form{background:#fff;border-radius:22px;padding:34px;display:grid;gap:14px;box-shadow:0 20px 50px rgba(120,60,75,.1)}
+form h3{font-size:1.7rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:grid;gap:6px;font-size:.85rem;font-weight:700}
+input,select{font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg)}
+input:focus,select:focus{outline:2px solid var(--rose);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:block}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;font-weight:500;cursor:pointer;font-size:.88rem}
+.chips input:checked+span{background:var(--rose);border-color:var(--rose);color:#fff}
+form button{border:0;cursor:pointer;margin-top:6px}
+footer{padding:50px 0;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.wa{position:fixed;right:22px;bottom:22px;z-index:30;background:#25d366;color:#fff;font-weight:700;padding:14px 20px;border-radius:999px;box-shadow:0 10px 28px rgba(0,0,0,.2);font-size:.9rem}
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none}}
+@media (max-width:900px){
+ nav{position:fixed;inset:72px 0 auto;background:var(--bg);flex-direction:column;padding:22px;display:none;border-bottom:1px solid var(--line)}
+ nav.open{display:flex}.burger{display:block}
+ .hero,.bk{grid-template-columns:1fr}.hero{padding-top:40px}
+ .badge{left:12px}
+ .price-cols,.team,.rv{grid-template-columns:1fr}
+ .strip{grid-template-columns:1fr}
+ .two{grid-template-columns:1fr}
+ section{padding:72px 0}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="#" class="logo">Atelier <span>Lumière</span></a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav><a href="#servizi">Servizi e prezzi</a><a href="#team">Il team</a><a href="#recensioni">Recensioni</a><a href="#prenota" class="btn btn-rose">Prenota</a></nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <div>
+    <div class="kicker">Parrucchieri · Carpi</div>
+    <h1>Capelli che ti somigliano, <i>davvero.</i></h1>
+    <p>Taglio, colore e balayage su misura, con prodotti professionali e una consulenza gratuita prima di ogni servizio.</p>
+    <div class="cta"><a href="#prenota" class="btn btn-rose">Prenota un appuntamento</a><a href="#servizi" class="btn btn-ghost">Vedi i prezzi</a></div>
+    <div class="trust"><div class="avatars"><i></i><i></i><i></i></div><div><b>4,9 su 5</b> da oltre 280 clienti su Google</div></div>
+  </div>
+  <div class="hero-art reveal">
+    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1100&q=75" alt="Il salone">
+    <div class="badge"><b>15</b><div>anni di esperienza<small>specialiste del colore</small></div></div>
+  </div>
+</div>
+
+<section class="services" id="servizi">
+  <div class="wrap">
+    <div class="sv-head reveal"><div><div class="kicker">Servizi e prezzi</div><h2>Trasparenti, <i>senza sorprese</i></h2></div><p>Prezzi indicativi per capelli di media lunghezza. Il preventivo esatto te lo diamo durante la consulenza, sempre gratuita.</p></div>
+    <div class="price-cols">
+      <div class="pcol reveal"><h3>Taglio e piega</h3>
+        <div class="row"><span>Taglio donna<small>con shampoo e piega</small></span><span>38 €</span></div>
+        <div class="row"><span>Piega</span><span>22 €</span></div>
+        <div class="row"><span>Taglio uomo</span><span>20 €</span></div>
+        <div class="row"><span>Taglio bambini<small>fino a 12 anni</small></span><span>15 €</span></div>
+        <div class="row"><span>Raccolto sposa e cerimonia</span><span>da 70 €</span></div>
+      </div>
+      <div class="pcol reveal"><h3>Colore</h3>
+        <div class="row"><span>Colore radici</span><span>40 €</span></div>
+        <div class="row"><span>Balayage<small>con tonalizzante</small></span><span>da 90 €</span></div>
+        <div class="row"><span>Meches e colpi di sole</span><span>da 65 €</span></div>
+        <div class="row"><span>Gloss illuminante</span><span>25 €</span></div>
+        <div class="row"><span>Correzione colore</span><span>su consulenza</span></div>
+      </div>
+      <div class="pcol reveal"><h3>Trattamenti</h3>
+        <div class="row"><span>Ricostruzione alla cheratina</span><span>60 €</span></div>
+        <div class="row"><span>Trattamento anticrespo</span><span>da 120 €</span></div>
+        <div class="row"><span>Rituale idratante</span><span>18 €</span></div>
+        <div class="row"><span>Trattamento cute sensibile</span><span>20 €</span></div>
+        <div class="row"><span>Consulenza d'immagine</span><span>gratuita</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Il team</div><h2>Le mani dietro al <i>tuo stile</i></h2></div>
+    <div class="team">
+      <div class="member reveal"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=75" alt="Sara" loading="lazy"><h3>Sara</h3><p>Titolare · specialista balayage e biondi</p></div>
+      <div class="member reveal"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=75" alt="Giorgia" loading="lazy"><h3>Giorgia</h3><p>Colorista · correzioni colore</p></div>
+      <div class="member reveal"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=75" alt="Matteo" loading="lazy"><h3>Matteo</h3><p>Tagli uomo e donna · tagli corti</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="recensioni" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Recensioni</div><h2>Le nostre clienti <i>raccontano</i></h2></div>
+    <div class="rv">
+      <blockquote class="reveal"><span class="s">★★★★★</span><p>“Finalmente un balayage naturale come lo volevo. Sara ascolta davvero.”</p><cite>Federica · Google</cite></blockquote>
+      <blockquote class="reveal"><span class="s">★★★★★</span><p>“Ambiente bellissimo, puntuali e prezzi chiari. Non cambio più salone.”</p><cite>Martina · Google</cite></blockquote>
+      <blockquote class="reveal"><span class="s">★★★★★</span><p>“Mi hanno sistemato un colore rovinato altrove. Bravissime.”</p><cite>Elena · Facebook</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="prenota">
+  <div class="wrap bk">
+    <div class="reveal">
+      <div class="kicker">Prenotazioni</div>
+      <h2>Prenota in <i>30 secondi</i></h2>
+      <p style="color:var(--muted);max-width:42ch">Scegli il servizio e il giorno: ti confermiamo l'orario su WhatsApp. Puoi anche chiamarci al 059 765 4321.</p>
+      <div class="hours">
+        <div class="row"><span>Martedì – Venerdì</span><span>9:00 – 19:00</span></div>
+        <div class="row"><span>Sabato</span><span>8:30 – 18:00</span></div>
+        <div class="row"><span>Domenica e Lunedì</span><span>Chiuso</span></div>
+        <div class="row"><span>Dove</span><span>Corso Fanti 21, Carpi</span></div>
+      </div>
+    </div>
+    <form class="reveal" onsubmit="event.preventDefault();const f=new FormData(this);const s=[...this.querySelectorAll('.chips input:checked')].map(i=>i.value).join(', ');window.open('https://wa.me/390597654321?text='+encodeURIComponent('Ciao! Vorrei prenotare: '+s+' – '+f.get('d')+' ('+f.get('o')+'). Nome: '+f.get('n')),'_blank')">
+      <h3>Richiedi un appuntamento</h3>
+      <label>Servizio</label>
+      <div class="chips">
+        <label><input type="checkbox" value="Taglio"><span>Taglio</span></label>
+        <label><input type="checkbox" value="Piega"><span>Piega</span></label>
+        <label><input type="checkbox" value="Colore"><span>Colore</span></label>
+        <label><input type="checkbox" value="Balayage"><span>Balayage</span></label>
+        <label><input type="checkbox" value="Trattamento"><span>Trattamento</span></label>
+      </div>
+      <div class="two"><label>Giorno<input name="d" type="date" required></label><label>Fascia oraria<select name="o"><option>Mattina</option><option>Pausa pranzo</option><option>Pomeriggio</option></select></label></div>
+      <label>Nome<input name="n" required placeholder="Il tuo nome"></label>
+      <button class="btn btn-rose" type="submit">Invia su WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Atelier Lumière · Corso Fanti 21, Carpi · 059 765 4321</span><span>Sito dimostrativo: attività di fantasia</span></div></footer>
+<a class="wa" href="https://wa.me/390597654321">WhatsApp</a>
+<script>
+document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.querySelector('nav').classList.remove('open'));
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

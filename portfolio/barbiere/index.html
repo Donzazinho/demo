@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Officina del Barbiere – Barber shop a Modena</title>
+<meta name="description" content="Officina del Barbiere: taglio, sfumature, barba con panno caldo a Modena. Prenota il tuo posto in poltrona.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0f10;--panel:#18181a;--line:#2a2a2d;--ink:#f1ede6;--muted:#a19c94;--brass:#c9a063;--brass-d:#a9824a;
+--disp:"Bebas Neue",Impact,sans-serif;--sans:Inter,system-ui,sans-serif;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--disp);font-weight:400;letter-spacing:.02em;line-height:.95}
+h2{font-size:clamp(3rem,6vw,4.6rem);margin:.4rem 0 1.2rem}
+.k{font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.btn{display:inline-block;padding:15px 28px;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;transition:.25s;border:2px solid var(--brass)}
+.btn-b{background:var(--brass);color:#111}.btn-b:hover{background:var(--brass-d);border-color:var(--brass-d)}
+.btn-o{color:var(--brass)}.btn-o:hover{background:var(--brass);color:#111}
+header{position:fixed;inset:0 0 auto;z-index:20;transition:.3s}
+header.solid{background:rgba(15,15,16,.95);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:78px}
+.logo{font-family:var(--disp);font-size:1.9rem;letter-spacing:.06em}
+.logo b{color:var(--brass);font-weight:400}
+nav{display:flex;gap:30px;align-items:center;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+nav a:hover{color:var(--brass)}
+nav .btn{padding:10px 18px}
+.burger{display:none;background:none;border:0;color:var(--ink);font-size:1.6rem;cursor:pointer}
+.hero{min-height:100svh;display:grid;align-items:center;background:linear-gradient(90deg,rgba(15,15,16,.96) 0%,rgba(15,15,16,.75) 45%,rgba(15,15,16,.2)),url(https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=2000&q=75) center/cover}
+.hero .wrap{width:100%}
+.hero h1{font-size:clamp(4rem,11vw,9rem);margin:.6rem 0 1rem}
+.hero h1 span{color:var(--brass)}
+.hero p{max-width:42ch;color:var(--muted);font-size:1.08rem;margin-bottom:2rem}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0;background:var(--panel)}
+.ticker div{display:inline-block;animation:slide 30s linear infinite;font-family:var(--disp);font-size:1.6rem;letter-spacing:.08em;color:var(--muted)}
+.ticker span{color:var(--brass);margin:0 22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker div{animation:none}}
+section{padding:110px 0}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+.card{background:var(--bg);padding:34px 28px;transition:.3s}
+.card:hover{background:var(--panel)}
+.card .n{font-family:var(--disp);color:var(--brass);font-size:1.2rem}
+.card h3{font-size:2.1rem;margin:14px 0 8px}
+.card p{color:var(--muted);font-size:.92rem;min-height:4.5em}
+.card .p{font-family:var(--disp);font-size:2.6rem;margin-top:18px}
+.card .p small{font-family:var(--sans);font-size:.8rem;color:var(--muted);margin-left:6px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(.25) contrast(1.05)}
+.split p{color:var(--muted);margin-bottom:1rem;max-width:48ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px;border-top:1px solid var(--line);padding-top:26px}
+.facts b{display:block;font-family:var(--disp);font-size:3rem;color:var(--brass);font-weight:400}
+.facts span{font-size:.85rem;color:var(--muted)}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:280px;gap:10px}
+.gal img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3)}
+.gal img:hover{filter:none}
+.gal .t{grid-row:span 2}
+/* booking widget */
+.book{background:var(--panel);border-top:1px solid var(--line)}
+.bk{display:grid;grid-template-columns:1fr 1.15fr;gap:60px}
+.bk p{color:var(--muted);max-width:42ch}
+.hours{margin-top:26px}
+.hours div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.hours div span:first-child{color:var(--muted)}
+.widget{background:var(--bg);border:1px solid var(--line);padding:30px}
+.step{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:18px 0 10px;font-weight:700}
+.step:first-child{margin-top:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{font:inherit;font-size:.9rem;background:transparent;color:var(--ink);border:1px solid var(--line);padding:10px 14px;cursor:pointer;transition:.2s;font-variant-numeric:tabular-nums}
+.opts button:hover{border-color:var(--brass)}
+.opts button.on{background:var(--brass);border-color:var(--brass);color:#111;font-weight:700}
+.opts button:disabled{opacity:.3;cursor:not-allowed;text-decoration:line-through}
+.sum{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.sum div{color:var(--muted);font-size:.9rem}
+.sum b{color:var(--ink)}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.rv div{border:1px solid var(--line);padding:28px}
+.rv p{font-size:1.05rem;margin:10px 0 14px}
+.rv span{color:var(--muted);font-size:.85rem}
+.st{color:var(--brass);letter-spacing:3px}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.wa{position:fixed;right:22px;bottom:22px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.4)}
+.wa svg{width:30px;fill:#fff}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none}}
+@media (max-width:900px){
+ nav{position:fixed;inset:78px 0 auto;background:var(--bg);flex-direction:column;padding:24px;display:none;border-bottom:1px solid var(--line)}
+ nav.open{display:flex}.burger{display:block}
+ .svc{grid-template-columns:1fr 1fr}
+ .split,.bk{grid-template-columns:1fr;gap:40px}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gal .t{grid-column:span 2;grid-row:auto}
+ .rv{grid-template-columns:1fr}
+ section{padding:80px 0}
+}
+@media (max-width:520px){.svc{grid-template-columns:1fr}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="#" class="logo">Officina <b>del</b> Barbiere</a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav><a href="#servizi">Servizi</a><a href="#bottega">La bottega</a><a href="#lavori">Lavori</a><a href="#prenota" class="btn btn-b">Prenota</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="k">Barber shop · Modena · dal 2014</div>
+    <h1>Taglio da <span>uomo</span>.<br>Fatto bene.</h1>
+    <p>Sfumature precise, barba con panno caldo e rasoio a mano libera. Niente fretta: ogni cliente ha la sua mezz'ora in poltrona.</p>
+    <div class="cta"><a href="#prenota" class="btn btn-b">Prenota il tuo posto</a><a href="#servizi" class="btn btn-o">Listino</a></div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div>FADE <span>✦</span> BARBA CON PANNO CALDO <span>✦</span> RASATURA TRADIZIONALE <span>✦</span> TAGLIO BAMBINO <span>✦</span> TRATTAMENTO VISO <span>✦</span> FADE <span>✦</span> BARBA CON PANNO CALDO <span>✦</span> RASATURA TRADIZIONALE <span>✦</span> TAGLIO BAMBINO <span>✦</span> TRATTAMENTO VISO <span>✦</span></div></div>
+
+<section id="servizi">
+  <div class="wrap">
+    <div class="reveal"><div class="k">Listino</div><h2>Servizi</h2></div>
+    <div class="svc reveal">
+      <div class="card"><span class="n">01</span><h3>Taglio</h3><p>Forbice e macchinetta, lavaggio e styling con prodotti professionali.</p><div class="p">22€<small>30 min</small></div></div>
+      <div class="card"><span class="n">02</span><h3>Skin fade</h3><p>Sfumatura a zero lavorata a mano, contorni precisi con rasoio.</p><div class="p">25€<small>40 min</small></div></div>
+      <div class="card"><span class="n">03</span><h3>Barba</h3><p>Modellatura, panno caldo, rasoio a mano libera e balsamo.</p><div class="p">15€<small>20 min</small></div></div>
+      <div class="card"><span class="n">04</span><h3>Taglio + barba</h3><p>Il servizio completo, con panno caldo e massaggio al viso.</p><div class="p">34€<small>50 min</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="bottega" style="padding-top:0">
+  <div class="wrap split">
+    <img class="reveal" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1000&q=75" alt="La bottega" loading="lazy">
+    <div class="reveal">
+      <div class="k">La bottega</div>
+      <h2>Tre poltrone,<br>zero fretta</h2>
+      <p>Abbiamo aperto nel 2014 in una vecchia officina di via Emilia: da qui il nome. Le poltrone sono quelle originali degli anni '60, restaurate a mano.</p>
+      <p>Si viene per il taglio, si resta per la chiacchierata. Caffè sempre pronto, musica buona e la partita il sabato pomeriggio.</p>
+      <div class="facts"><div><b>12k+</b><span>tagli all'anno</span></div><div><b>4,9★</b><span>su Google</span></div><div><b>3</b><span>barbieri</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:34px"><div class="k">Lavori</div><h2>Dalla poltrona</h2></div>
+    <div class="gal reveal">
+      <img class="t" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1100&q=75" alt="Taglio" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=700&q=75" alt="Strumenti" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=700&q=75" alt="Poltrona" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=700&q=75" alt="Bottega" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=700&q=75&fit=crop&crop=right" alt="Dettaglio" loading="lazy">
+    </div>
+    <div class="rv">
+      <div class="reveal"><span class="st">★★★★★</span><p>“Il miglior fade di Modena, e si vede la cura. Prenotazione semplicissima.”</p><span>Luca B. · Google</span></div>
+      <div class="reveal"><span class="st">★★★★★</span><p>“La barba col panno caldo è un rito. Ragazzi simpaticissimi.”</p><span>Davide R. · Google</span></div>
+      <div class="reveal"><span class="st">★★★★★</span><p>“Porto anche mio figlio: pazienza infinita e risultato perfetto.”</p><span>Stefano M. · Facebook</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="prenota">
+  <div class="wrap bk">
+    <div class="reveal">
+      <div class="k">Prenotazioni</div>
+      <h2>Prenota il tuo posto</h2>
+      <p>Scegli servizio, giorno e orario: la richiesta arriva direttamente su WhatsApp e ti confermiamo in pochi minuti.</p>
+      <div class="hours">
+        <div><span>Martedì – Venerdì</span><span>9:00 – 19:30</span></div>
+        <div><span>Sabato</span><span>8:30 – 18:00</span></div>
+        <div><span>Domenica e Lunedì</span><span>Chiuso</span></div>
+        <div><span>Dove</span><span>Via Emilia Ovest 88, Modena</span></div>
+      </div>
+    </div>
+    <div class="widget reveal">
+      <div class="step">1 · Servizio</div><div class="opts" id="s"></div>
+      <div class="step">2 · Giorno</div><div class="opts" id="d"></div>
+      <div class="step">3 · Orario</div><div class="opts" id="o"></div>
+      <div class="sum"><div id="sum">Scegli servizio, giorno e orario</div><a id="go" class="btn btn-b" href="#prenota" aria-disabled="true" style="opacity:.4;pointer-events:none">Prenota su WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Officina del Barbiere · Via Emilia Ovest 88, Modena · 059 246 8100</span><span>Sito dimostrativo: attività di fantasia</span></div></footer>
+<a class="wa" href="https://wa.me/390592468100" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></a>
+<script>
+const h=document.querySelector('header');addEventListener('scroll',()=>h.classList.toggle('solid',scrollY>60));h.classList.toggle('solid',scrollY>60);
+document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.querySelector('nav').classList.remove('open'));
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// booking widget
+const sel={s:null,d:null,o:null};
+const services=['Taglio · 22€','Skin fade · 25€','Barba · 15€','Taglio + barba · 34€'];
+const days=[];const names=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+for(let i=1;days.length<6;i++){const d=new Date();d.setDate(d.getDate()+i);if(d.getDay()===0||d.getDay()===1)continue;days.push(d)}
+const slots=['9:00','10:00','11:00','12:00','15:00','16:00','17:00','18:00'];
+function busy(d,t){return (d.getDate()*7+t.length*3+parseInt(t))%4===0}
+function btn(parent,label,key,val,dis){const b=document.createElement('button');b.type='button';b.textContent=label;b.disabled=!!dis;b.onclick=()=>{sel[key]=val;if(key==='d')sel.o=null;render()};if(sel[key]===val)b.className='on';parent.appendChild(b)}
+function render(){
+ const S=document.getElementById('s'),D=document.getElementById('d'),O=document.getElementById('o');S.innerHTML=D.innerHTML=O.innerHTML='';
+ services.forEach(x=>btn(S,x,'s',x));
+ days.forEach((d,i)=>btn(D,names[d.getDay()]+' '+d.getDate(),'d',i));
+ slots.forEach(t=>btn(O,t,'o',t,sel.d===null||busy(days[sel.d],t)));
+ const ok=sel.s&&sel.d!==null&&sel.o;const go=document.getElementById('go');
+ document.getElementById('sum').innerHTML=ok?'<b>'+sel.s.split(' ·')[0]+'</b> · '+names[days[sel.d].getDay()]+' '+days[sel.d].getDate()+' alle '+sel.o:'Scegli servizio, giorno e orario';
+ go.style.opacity=ok?1:.4;go.style.pointerEvents=ok?'auto':'none';
+ if(ok)go.href='https://wa.me/390592468100?text='+encodeURIComponent('Ciao! Vorrei prenotare '+sel.s+' '+names[days[sel.d].getDay()]+' '+days[sel.d].getDate()+' alle '+sel.o);
+}
+render();
+</script>
+</body>
+</html>
